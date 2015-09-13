@@ -1,6 +1,6 @@
 {
   "name": "react-immutable-cursor",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A React helper allowing for intuitive bidirectional data flow, through the use of cursors into a single, immutable root atom.",
   "main": "dist/react-immutable-cursor.js",
   "author": {
