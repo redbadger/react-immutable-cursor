@@ -1,12 +1,12 @@
-import {Component} from 'react';
-import Immutable from 'immutable';
-import Cursor from 'immutable/contrib/cursor';
+import React from 'react';
+import {fromJS as buildImmutableFrom} from 'immutable';
+import {from as buildRootCursorFrom} from 'immutable/contrib/cursor';
 
-export default class extends Component {
+export default class extends React.Component {
 
   updateAndRenderTree(newData) {
     this.setState({
-      cursor: Cursor.from(
+      cursor: buildRootCursorFrom(
         newData,
         ::this.updateAndRenderTree
       )
@@ -15,12 +15,12 @@ export default class extends Component {
 
   createAtom() {
     if (typeof this.initialState !== 'function') {
-      throw new TypeError('No method initialState defined on React class that initial props are passed to');
+      throw new Error('No method initialState defined on React class that initial props are passed to');
     }
     const data = this.initialState();
     return {
-      cursor: Cursor.from(
-        Immutable.fromJS(data),
+      cursor: buildRootCursorFrom(
+        buildImmutableFrom(data),
         ::this.updateAndRenderTree
       )
     };
