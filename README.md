@@ -1,4 +1,6 @@
 # React Immutable Cursor
+[![Circle CI](https://circleci.com/gh/redbadger/react-immutable-cursor/tree/master.svg?style=svg)](https://circleci.com/gh/redbadger/react-immutable-cursor/tree/master)
+[![npm version](https://badge.fury.io/js/react-immutable-cursor.svg)](http://badge.fury.io/js/react-immutable-cursor)
 
 > A React helper allowing for intuitive bidirectional data flow, through the use of cursors into a single, immutable root atom.
 
