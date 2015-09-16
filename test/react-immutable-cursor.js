@@ -1,7 +1,7 @@
 import chai from 'chai';
 import sinon from 'sinon';
 import Immutable from 'immutable';
-import Cursor from 'immutable/contrib/cursor';
+import Cursor from 'immutable-cursor';
 
 const expect = chai.expect;
 
