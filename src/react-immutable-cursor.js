@@ -1,6 +1,6 @@
 import React from 'react';
 import {fromJS as buildImmutableFrom} from 'immutable';
-import {from as buildRootCursorFrom} from 'immutable/contrib/cursor';
+import {from as buildRootCursorFrom} from 'immutable-cursor';
 
 export default class extends React.Component {
 
